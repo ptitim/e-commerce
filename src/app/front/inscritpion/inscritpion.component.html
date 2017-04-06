@@ -1,0 +1,24 @@
+<form (submit)="inscription()" [formGroup]="formulaire" >
+  <label for="nom">Nom</label>
+  <input type="text" name="nom" formGroupName="nom">
+
+  <label for="prenom">Prenom</label>
+  <input type="text" name="prenom" formGroupName="prenom" >
+
+  <label for="email">Email</label>
+  <input type="email" name="email" formGroupName="email" >
+
+  <label for="password">New password</label>
+  <input type="text" name="password" formGroupName="password" >
+
+  <label for="password2">Confirm password</label>
+  <input type="text" name="password2" formGroupName="password2" >
+
+  <label for="adresseFac">Adresse de facturation</label>
+  <input type="text" name="adresseFac" formGroupName="adresseFac" >
+
+  <label for="adresseLiv">Adresse de livraison</label>
+  <input type="text" name="adresseLiv" formGroupName="adresseLiv" >
+
+  <button type="submit">Enregistrer</button>
+</form>

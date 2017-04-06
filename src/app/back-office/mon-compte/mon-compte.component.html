@@ -1,0 +1,31 @@
+<form (submit)="modifier()" [formGroup]="formulaire" id="formInfo">
+  <md-input-container>
+    <input type="text" name="nom" formControlName="nom" mdInput>
+  </md-input-container>
+
+  <md-input-container>
+    <input type="text" name="prenom" formControlName="prenom" placeholder="prenom" mdInput>
+  </md-input-container>
+
+  <md-input-container>
+    <input type="email" name="email" formControlName="email" placeholder="email" mdInput>
+  </md-input-container>
+
+  <md-input-container>
+    <input type="text" name="password" formControlName="password" placeholder="password" mdInput>
+  </md-input-container>
+
+  <md-input-container>
+    <input type="text" name="password2" formControlName="password2" placeholder="password2" mdInput>
+  </md-input-container>
+
+  <md-input-container>
+    <input type="text" name="adresseFac" formControlName="adresseFac" placeholder="adresseFac" mdInput>
+  </md-input-container>
+
+  <md-input-container>
+    <input type="text" name="adresseLiv" formControlName="adresseLiv" placeholder="adresseLiv" mdInput>
+  </md-input-container>
+
+  <button md-raised-button type="submit">Enregistrer</button>
+</form>

@@ -1,0 +1,8 @@
+nav > ul{
+    display: flex;
+}
+
+.menu-item{
+    list-style-type: none;
+    margin: 0 1.5em;
+}

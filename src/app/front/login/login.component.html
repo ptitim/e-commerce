@@ -1,0 +1,14 @@
+<form [formGroup]="form" (submit)="connexion()" target="self">
+  <md-input-container>
+    <input type="email" mdInput placeholder="Email" name="email" formControlName="email">
+  </md-input-container>
+
+  <md-input-container>
+    <input type="password" mdInput placeholder="Password" name="password" formControlName="password">
+  </md-input-container>
+
+
+  <button md-raised-button class="md-primary" type="submit">Connexion</button>
+</form>
+
+<a routerLink="/inscription"></a>
