@@ -1,4 +1,15 @@
 .produit{
-    height: 3em;
-    width: 3em;
+    height: 7em;
+    width: 7em;
+    border: 2px grey solid;
+    margin: 0.3em;
+}
+.produit:hover{
+    border: 2px grey inset;
+}
+
+#list-produit{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
 }

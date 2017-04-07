@@ -10,14 +10,14 @@ import { ProduitService } from '../../back-office/services/ServiceProduit';
 })
 export class CatalogueComponent implements OnInit {
 
-  listProduits:Array<IProduit>;
-  
-  constructor(private serviceProduit:ProduitService) {
-    
-   }
+  listProduits: Array<IProduit>;
+
+  constructor(private serviceProduit: ProduitService) {
+
+  }
 
   ngOnInit() {
-    this.serviceProduit.getAllProduit().subscribe((rep) => this.listProduits = rep, (error)=> console.log("error: ", error)) ;
+    this.serviceProduit.getAllProduit().subscribe((rep) => this.listProduits = rep, (error) => console.log("error: ", error));
   }
 
 }

@@ -1,0 +1,25 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: grey;
+}
+
+.form{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 2em;
+        box-shadow: 1px 1px darkgrey
+
+}
+
+.form > form{
+     display: flex;
+    flex-direction: column;
+}
+
+#submit{
+    margin-top: 2em;
+}

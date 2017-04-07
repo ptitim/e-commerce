@@ -1,24 +1,39 @@
-<form (submit)="inscription()" [formGroup]="formulaire" >
-  <label for="nom">Nom</label>
-  <input type="text" name="nom" formGroupName="nom">
+<div class="container">
+  <div class="form">
 
-  <label for="prenom">Prenom</label>
-  <input type="text" name="prenom" formGroupName="prenom" >
+    <form (submit)="inscription()" [formGroup]="formulaire">
+      <md-input-container>
+        <input type="text" name="nom" formGroupName="nom" placeholder="Nom" mdInput>
+      </md-input-container>
 
-  <label for="email">Email</label>
-  <input type="email" name="email" formGroupName="email" >
+      <md-input-container>
+        <input type="text" name="prenom" formGroupName="prenom" placeholder="Prenom" mdInput>
+      </md-input-container>
 
-  <label for="password">New password</label>
-  <input type="text" name="password" formGroupName="password" >
+      <md-input-container>
+        <input type="email" name="email" formGroupName="email" placeholder="Email" mdInput>
+      </md-input-container>
 
-  <label for="password2">Confirm password</label>
-  <input type="text" name="password2" formGroupName="password2" >
+      <md-input-container>
+        <input type="text" name="password" formGroupName="password" placeholder="New password" mdInput>
+      </md-input-container>
 
-  <label for="adresseFac">Adresse de facturation</label>
-  <input type="text" name="adresseFac" formGroupName="adresseFac" >
+      <md-input-container>
+        <input type="text" name="password2" formGroupName="password2" placeholder="Confirm password" mdInput>
+      </md-input-container>
 
-  <label for="adresseLiv">Adresse de livraison</label>
-  <input type="text" name="adresseLiv" formGroupName="adresseLiv" >
+      <md-input-container>
+        <input type="text" name="adresseFac" formGroupName="adresseFac" placeholder="Adresse de facturation" mdInput>
+      </md-input-container>
 
-  <button type="submit">Enregistrer</button>
-</form>
+      <md-input-container>
+        <input type="text" name="adresseLiv" formGroupName="adresseLiv" placeholder="Adresse de livraison" mdInput>
+      </md-input-container>
+
+      <button md-raised-button class="md-primary" type="submit" >Enregistrer</button>
+
+    </form>
+
+    <a routerLink="/login" id="submit">retour login</a>
+  </div>
+</div>

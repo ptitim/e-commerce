@@ -1,0 +1,26 @@
+#login{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 2em;
+    box-shadow: 1px 1px darkgrey
+    
+}
+
+#login > form{
+    display: flex;
+    flex-direction: column;
+}
+
+#inscription{
+    margin-top: 1em;
+}
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: grey;
+}

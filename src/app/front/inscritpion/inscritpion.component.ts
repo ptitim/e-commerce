@@ -25,7 +25,7 @@ export class InscritpionComponent implements OnInit {
   }
 
   private confirmationmdp(form:FormGroup):{[key:string]:any} {
-    if(form.get('mdp').value === form.get('mdp2').value ){
+    if(form.get('password').value === form.get('password2').value ){
       return null;
     }else
     return {notSamePassword: true}

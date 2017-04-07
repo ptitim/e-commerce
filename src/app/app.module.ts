@@ -18,6 +18,7 @@ import { frontRouteur } from './app.frontRouter';
 import { ErrorComponent } from './error/error.component';
 import { backRouteur } from './app.backRouteur';
 import { FrontComponent } from './front/front.component';
+import { BackOfficeComponent } from './back-office/back-office.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,9 @@ import { FrontComponent } from './front/front.component';
     CatalogueComponent,
     ErrorComponent,
 
-    FrontComponent
+    FrontComponent,
+
+    BackOfficeComponent
   ],
   imports: [
     BrowserModule,
